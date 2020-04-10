@@ -1,0 +1,383 @@
+/*********************************
+// COMPONENTS
+/*********************************/
+// Header and navigation
+.nav-bar {
+  background-color: $color-nav;
+  color: white;
+}
+
+// Images
+.hero-img {
+  width: 100%;
+}
+
+.column-img {
+  width: 100%;
+  height: 50%;
+}
+
+//Sections
+.block {
+  h1,
+  h3,
+  h5 {
+    color: $color-primary;
+  }
+
+  h2,
+  h4,
+  h6 {
+    color: $color-accent;
+  }
+}
+
+// Cards
+.card-block {
+  background-color: whitesmoke;
+  margin: $margin-minor;
+  box-shadow: $shadow-x $shadow-y $shadow-blur $shadow-spread $shadow-color;
+  border-radius: $border-radius;
+  //Animation
+  transition-property: width font-size;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+  transition-delay: $hover-delay;
+  .card-header {
+    font-size: 1.5em;
+    text-align: center;
+    background-color: $color-primary;
+    border-width: $border-width;
+    border-radius: $border-radius $border-radius 0px 0px;
+    padding: $padding-general;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+      color: white;
+    }
+  }
+
+  .card-img {
+    height: auto;
+    width: auto;
+  }
+
+  .card-details {
+    font-size: 1em;
+  }
+}
+
+.card-block:hover {
+  @media (min-width: $desktop) {
+    width: 50%;
+    font-size: 1.5em;
+  }
+}
+
+.subsection {
+  background-color: whitesmoke;
+  margin: $margin-minor;
+  box-shadow: $shadow-x $shadow-y $shadow-blur $shadow-spread $shadow-color;
+  border-radius: $border-radius;
+  padding: 2em;
+
+  i {
+    font-size: 1.2em;
+  }
+}
+
+// FAQ
+.faq-block {
+  background-color: whitesmoke;
+  margin: $margin-minor;
+  box-shadow: $shadow-x $shadow-y $shadow-blur $shadow-spread $shadow-color;
+  border-radius: $border-radius;
+  padding: 2em;
+}
+
+// Quotes
+
+.quote-block {
+  text-align: center;
+  .quote {
+    font-size: $size-quote;
+    color: $color-secondary;
+    line-height: $linespacing;
+  }
+
+  .quote-marks {
+    font-size: 3rem;
+    color: $color-primary;
+  }
+
+  .quote-source {
+    display: block;
+    font-size: calc($size-quote * 0.5);
+  }
+}
+
+// Prices
+.price-block {
+  .price-header {
+    text-align: left;
+  }
+
+  .price {
+    color: $color-success;
+  }
+
+  .icon {
+    font-size: 1em;
+  }
+}
+
+// Icon Lists
+.icon-list {
+  font-size: $size-heading-2;
+}
+
+// Media
+.media-block {
+  .media-header {
+    font-size: 1.5em;
+    text-align: center;
+    background-color: $color-primary;
+    border-width: $border-width;
+    border-radius: $border-radius;
+    padding: $padding-general;
+    color: white;
+    width: 100%;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+      color: white;
+    }
+  }
+}
+
+// Footer
+.footer {
+  background-color: $color-nav;
+
+  .footer-heading {
+    color: white;
+    font-size: 1em;
+  }
+}
+
+.contact-block {
+  padding-left: 2em;
+  .contact-list {
+    font-size: 1.2em;
+    i {
+      font-size: 1.3em;
+    }
+  }
+}
+
+.copyright {
+  color: white;
+}
+
+.location-img {
+  border-radius: $border-radius;
+}
+
+.social-media-links {
+  border-radius: $border-radius;
+}
+
+// Nav Menu
+.nav-menu {
+  ul {
+    li {
+      a:hover {
+        color: black;
+      }
+    }
+  }
+}
+
+nav {
+  ul {
+    li {
+      a {
+        border-bottom: solid $border-width;
+        font-weight: 400;
+        font-family: $font-primary;
+        border-color: $color-nav;
+
+        transition-property: border-color;
+        transition-duration: 300ms;
+        transition-timing-function: linear;
+        transition-delay: calc($hover-delay / 2);
+      }
+      a:hover {
+        border-bottom: solid $border-width;
+        border-color: $color-accent;
+      }
+      a:active {
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.home-cta-text {
+  @media (max-width: $mobile) {
+    p {
+      color: white;
+    }
+
+    h1,
+    h2,
+    h3 {
+      background-color: white;
+      border-style: solid;
+      border-width: 1px;
+      border-color: $color-accent;
+      border-radius: $border-radius;
+      text-align: center;
+    }
+  }
+}
+
+.mobile-text {
+  @media (max-width: $mobile) {
+    color: white;
+  }
+}
+
+.no-icon {
+  i {
+    opacity: 0;
+  }
+}
+
+// Quote Calculator Components
+.quote-calc {
+  &__body {
+    background-color: whitesmoke;
+    // padding: $padding-wrapper;
+    justify-items: center;
+  }
+
+  &__heading {
+    color: $color-black;
+  }
+}
+
+.quote_calc__feature-col {
+  // background-color: $color-accent;
+  padding: $padding-wrapper;
+}
+
+.quote_calc__preset-col {
+  background-color: darken($color: whitesmoke, $amount: 10);
+  padding: $padding-wrapper;
+}
+
+.price-total {
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  background-color: $color-secondary;
+
+  &__heading {
+    font-size: 1em;
+  }
+
+  &__price {
+    font-size: 0.9em;
+    &__dollar-sign {
+      color: $color-success;
+    }
+  }
+}
+
+.price-total--top {
+  border-radius: $border-radius $border-radius 0px 0px;
+}
+
+.price-total--bottom {
+  border-radius: 0px 0px $border-radius $border-radius;
+}
+
+.feature-grid {
+  background-color: #856b78;
+  margin: $margin-major;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  @include border-shape;
+}
+
+.preset-grid {
+  background-color: #856b78;
+  margin: $margin-major;
+  @include border-shape;
+}
+
+.block {
+  // Typography + Scale
+  color: white;
+  text-align: center;
+  font-size: 2em;
+
+  // Margin + Padding
+  margin: $margin-minor;
+  padding: $padding-general;
+
+  // Borders
+  @include border-shape;
+
+  // Animation
+  @include float-anim;
+  @include background-color-transition;
+
+  &__icon {
+    color: white;
+    font-size: 1em;
+  }
+
+  &__title {
+    font-size: 0.7em;
+  }
+
+  &__price {
+    font-size: 1.2em;
+    &__dollar {
+      color: $color-success;
+    }
+  }
+
+  &:hover {
+    @include shadow-fade;
+    @include shadow;
+  }
+}
+
+.block--false {
+  background-color: $color-secondary;
+
+  &:hover {
+    background-color: lighten($color-secondary, $amount: 5);
+  }
+}
+
+.block--true {
+  background-color: $color-primary;
+
+  &:hover {
+    background-color: lighten($color-primary, $amount: 5);
+  }
+}

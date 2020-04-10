@@ -1,0 +1,84 @@
+// Site title
+.site-title {
+  color: $color-secondary;
+  font-family: $font-secondary;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 88.5%;
+  text-transform: unset;
+  margin-bottom: 10px;
+  letter-spacing: 0.1em;
+
+  @media (min-width: $tablet) {
+    color: white;
+    font-size: 60px;
+  }
+}
+
+// Page title
+.page-title {
+  font-size: 36px;
+  font-weight: bolder;
+  text-align: center;
+  color: #2fa85f;
+
+  &--large {
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+}
+
+// Heading
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: unset;
+  line-height: 1.1;
+
+  &--light {
+    color: #35bf6c;
+  }
+
+  &--dark {
+    color: #2fa85f;
+  }
+  &--large {
+    font-size: 36px;
+    text-transform: uppercase;
+  }
+
+  &--center {
+    text-align: center;
+  }
+}
+
+.subheading {
+  font-size: 18px;
+  font-weight: lighter;
+  text-transform: unset;
+
+  &--light {
+    color: white;
+  }
+
+  &--dark {
+    color: #262927;
+  }
+}
+
+// Paragraph
+.paragraph {
+  font-size: 18px;
+  font-weight: lighter;
+  color: #262927;
+  line-height: 1.25;
+
+  &--light {
+    color: white;
+  }
+
+  &--dark {
+    color: #888282;
+  }
+}

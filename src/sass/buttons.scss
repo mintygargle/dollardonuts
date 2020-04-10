@@ -1,0 +1,69 @@
+// Button
+.btn {
+  font-size: 18px;
+  font-weight: medium;
+  background-color: #2fa85f;
+  color: white;
+
+  box-shadow: none;
+  border-radius: 16px;
+  border-color: #2fa85f;
+  border-style: solid;
+  border-width: 2px;
+  max-width: fit-content;
+  width: 100%;
+  margin: 1em;
+
+  &:hover {
+    background-color: rgba($color: #000000, $alpha: 0);
+    color: #2fa85f;
+  }
+
+  // Primary
+  &--primary {
+    text-transform: uppercase;
+  }
+
+  // Secondary
+  &--secondary {
+    background-color: rgba($color: #000000, $alpha: 0);
+    color: #2fa85f;
+
+    &:hover {
+      background-color: #2fa85f;
+      color: white;
+    }
+  }
+
+  // Flat-top
+  &--flat-top {
+    border-radius: 0px 0px 16px 16px;
+  }
+
+  // Flat-bottom
+  &--flat-bottom {
+    border-radius: 16px 16px 0px 0px;
+  }
+
+  // Large
+  &--large {
+    max-width: 250px;
+    font-size: 36px;
+    text-transform: uppercase;
+  }
+
+  // Corner
+  &--lower-left-corner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0px 16px 0px 0px;
+    transition: width 0.4s ease-in;
+    width: 100%;
+
+    &:hover {
+      transition: width 0.4s ease-in;
+      width: 200% !important;
+    }
+  }
+}

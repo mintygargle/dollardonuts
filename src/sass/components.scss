@@ -1,0 +1,106 @@
+/*********************************
+// COMPONENTS
+/*********************************/
+@import "./cards.scss";
+@import "./nav.scss";
+@import "./buttons.scss";
+@import "./text.scss";
+@import "./forms.scss";
+// Navigation
+.main-nav {
+  padding-left: 1.2em;
+  &__logo {
+    vertical-align: center;
+    margin: 0.5em;
+  }
+
+  &__link-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &__link {
+    padding: 0.5em;
+    border-radius: 8px 8px 0px 0px;
+
+    &--active {
+      @include background-color-transition;
+      @include text-color-transition;
+      background-color: $color-background;
+      color: $color-primary;
+
+      &:hover {
+        background-color: $color-primary;
+        color: $color-secondary;
+      }
+    }
+
+    &--inactive {
+      @include background-color-transition;
+      &:hover {
+        background-color: $color-primary;
+        color: $color-secondary;
+      }
+    }
+  }
+}
+
+.article {
+  &__title {
+  }
+
+  &__byline {
+  }
+
+  &__section {
+  }
+
+  &__heading {
+  }
+
+  &__content {
+  }
+
+  &__image {
+  }
+
+  &__footer {
+  }
+}
+
+.signup-form {
+  @include border-shape;
+
+  background-color: $color-secondary;
+  max-width: fit-content;
+  padding: 1.5em;
+
+  &__input-group {
+  }
+
+  &__label {
+  }
+
+  &__input {
+  }
+
+  &__submit-btn {
+  }
+}
+
+.copyright {
+  color: $color-text;
+  font-family: $font-secondary;
+}
+
+// Containers
+.component-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+}

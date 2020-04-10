@@ -1,0 +1,35 @@
+                        Sass Class Styling:
+
+Order:
+-- List "extends" first
+-- List "includes" second (separate by vendor and author)
+-- List regular style rules last
+-- Next, list nested pseudo class and pseudo elements
+-- Lastly, add list nested selectors (same order rules apply within nested selectors)
+-- In your global stylesheet, @import a _shame.scss file last.
+
+Grouping: 
+-- Group related style rules (one line between rule groups)
+-- Two lines between class selectors
+-- One rule per line
+-- One selector per line, One rule per line
+-- Break Into As Many Small Files As Makes Sense
+-- Styles only exist in component files, not in global or section-specific sass files
+
+Compilation/Deployment:
+-- Locally, Compile with Source Maps
+-- In Deployment, Compile Compressed
+-- Don't Even Commit .css Files
+
+DO:
+-- Have a plan for class name naming
+-- Be consistant with indentation
+-- Be consistant about where spaces before/after colons/braces go
+-- List Vendor/Global Dependencies First, Then Author Dependencies, Then Patterns, Then Parts
+-- Be Generous With Comments
+
+DON'T:
+-- Don't use ID's (only class and element selectors)
+-- Don't write vendor prefixes (use autoprefixing)
+-- Don't nest more than three levels
+-- Don't write a nested selector more than 50 lines

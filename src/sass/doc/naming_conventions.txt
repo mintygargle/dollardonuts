@@ -1,0 +1,6 @@
+
+-- Partials are named _partial.scss
+-- Variablize All Common Numbers, and Numbers with Meaning
+-- Variablize All Colors
+-- Nest and Name Your Media Queries
+-- BEM Naming Scheme: http://getbem.com/naming/

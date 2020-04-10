@@ -1,0 +1,198 @@
+/*********************************
+// ELEMENTS
+/*********************************/
+
+// General
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: $font-secondary;
+  background-color: white;
+  color: $color-text;
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+head {
+  margin-bottom: 2em;
+}
+
+// Navigation sections
+header {
+  padding-top: 1em;
+  background-color: $color-secondary;
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+footer {
+  background-color: $color-secondary;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+nav {
+  background-color: $color-secondary;
+}
+
+// Partitions
+main {
+  display: grid;
+}
+section {
+  padding: 1em;
+}
+article {
+  max-width: 36em;
+  margin: 0 auto;
+}
+
+// Headings, Paragraphs, Links
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-primary;
+  text-transform: uppercase;
+}
+h1,
+h3 {
+  color: $color-primary;
+}
+a {
+  color: $color-primary;
+  cursor: pointer;
+
+  &:hover {
+    color: lighten($color-accent, 10);
+  }
+}
+
+a:visited {
+  color: $color-secondary;
+}
+
+// Buttons
+button,
+input[type="submit"] {
+  // @include float-anim;
+  @include background-color-transition;
+  @include button-shape;
+  @include inset-shadow;
+
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: 1em;
+  letter-spacing: 1px;
+
+  color: $color-white;
+  background-color: $color-secondary;
+
+  padding: 1rem;
+
+  display: inline-block;
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-text;
+  }
+}
+
+// Forms
+// textarea,
+// input[type="text"],
+// input[type="name"],
+// input[type="password"],
+// input[type="email"],
+// input[type="text"],
+// input[type="tel"] {
+//   // font-family: $font-secondary;
+
+//   // color: $color-gray;
+
+//   // border-radius: $border-radius;
+//   // border: none;
+
+//   // margin-bottom: $margin-minor;
+//   // padding: $padding-general;
+//   // padding-left: 1em;
+
+//   // display: block;
+
+//   &:focus {
+//     // border-bottom: solid 2px $color-primary;
+//   }
+// }
+option:hover {
+  background-color: $color-primary;
+}
+
+label {
+  input[type="radio"],
+  input[type="checkbox"] {
+    @include grow-anim;
+    -webkit-appearance: none;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: $color-secondary;
+    box-shadow: -4px -4px 0px -1px inset $shadow-color;
+    height: 32px;
+    width: 32px;
+    margin: 12px;
+    border-radius: 50%;
+
+    &:checked {
+      background-color: $color-primary;
+    }
+  }
+
+  input[type="checkbox"] {
+    border-radius: 8px;
+  }
+
+  input[type="radio"] {
+    border-radius: 50%;
+  }
+
+  .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+// Lists
+ul {
+  list-style: none;
+}
+
+// Icons
+i {
+  color: $color-primary;
+}
+
+//Images
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP|Open+Sans|Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+// @import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300&display=swap");
+// @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+@import "./sass/settings.scss";
+@import "./sass/tools.scss";
+@import "./sass/generic.scss";
+@import "./sass/elements.scss";
+@import "./sass/objects.scss";
+@import "./sass/components.scss";
+
+/*
+Theme Name: Best Fit Theme
+Auth: Michael Tanner
+*/
+
+//Preprocessor command: sass --watch style.scss:style.css --style compressed

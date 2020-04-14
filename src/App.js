@@ -15,12 +15,14 @@ import MainNav from "./components/Nav/main-nav";
 import { ThemeProvider } from "styled-components";
 import theme from "./components/theme";
 import "./style.scss";
+import ScrollToTop from "./components/ScrollToTop";
 
 class App extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
         <Router>
+          <ScrollToTop />
           <MainNav></MainNav>
           <br></br>
           <br></br>

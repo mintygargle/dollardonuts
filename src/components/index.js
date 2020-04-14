@@ -49,6 +49,7 @@ import { NavLink } from "react-router-dom";
 // Utils
 import openPanel from "../util/openPanel";
 import { useOnClickOutside } from "../util/useOnClickOutside";
+import ScrollToTop from "./ScrollToTop";
 
 // Exports
 export {
@@ -82,6 +83,7 @@ export {
   P,
   React,
   ReqSign,
+  ScrollToTop,
   SectionNav,
   ShopInfo,
   styled,

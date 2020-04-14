@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ff7aaee6eba6ed3cf9fed23f970ac138",
+    "revision": "c4ac06dec6e875a73f90935ae3bc5982",
     "url": "/dollardonuts/index.html"
   },
   {
-    "revision": "20bda86a712ebfd0ba13",
-    "url": "/dollardonuts/static/css/main.543804a8.chunk.css"
+    "revision": "3b21d926328801a5cb02",
+    "url": "/dollardonuts/static/css/main.686d20ce.chunk.css"
   },
   {
-    "revision": "e58edc36a77a1820c610",
-    "url": "/dollardonuts/static/js/2.1ab71789.chunk.js"
+    "revision": "5f84972778422dc1f4c0",
+    "url": "/dollardonuts/static/js/2.d6f3f810.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/dollardonuts/static/js/2.1ab71789.chunk.js.LICENSE.txt"
+    "url": "/dollardonuts/static/js/2.d6f3f810.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "20bda86a712ebfd0ba13",
-    "url": "/dollardonuts/static/js/main.9b5250b7.chunk.js"
+    "revision": "3b21d926328801a5cb02",
+    "url": "/dollardonuts/static/js/main.f5e17aff.chunk.js"
   },
   {
     "revision": "0694ca2b8429dadbeb56",

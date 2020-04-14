@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c4ac06dec6e875a73f90935ae3bc5982",
+    "revision": "88d01c54a4f614f915bf52a0bd8efc0a",
     "url": "/dollardonuts/index.html"
   },
   {
-    "revision": "3b21d926328801a5cb02",
+    "revision": "33595712b703ece7b331",
     "url": "/dollardonuts/static/css/main.686d20ce.chunk.css"
   },
   {
-    "revision": "5f84972778422dc1f4c0",
-    "url": "/dollardonuts/static/js/2.d6f3f810.chunk.js"
+    "revision": "2aa07a3da2d5f8689cb2",
+    "url": "/dollardonuts/static/js/2.0a724c5a.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/dollardonuts/static/js/2.d6f3f810.chunk.js.LICENSE.txt"
+    "url": "/dollardonuts/static/js/2.0a724c5a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3b21d926328801a5cb02",
-    "url": "/dollardonuts/static/js/main.f5e17aff.chunk.js"
+    "revision": "33595712b703ece7b331",
+    "url": "/dollardonuts/static/js/main.e1e3ec36.chunk.js"
   },
   {
     "revision": "0694ca2b8429dadbeb56",

@@ -105,6 +105,4 @@ const H3 = styled.h3`
   line-height: 1.1;
 `;
 
-export default H1;
-
-export { H2, H3 };
+export { H1, H2, H3 };

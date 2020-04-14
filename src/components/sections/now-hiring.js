@@ -1,9 +1,6 @@
-import React from "react";
-import Button from "../Buttons/button";
-import Background from "../background";
 import bg from "../../img/hiring_desktop.jpg";
 import styled from "styled-components";
-import P from "../Text/Paragraph";
+import { React, P, Button, Background } from "../index";
 
 const HireBG = styled(Background)`
   height: 430px;

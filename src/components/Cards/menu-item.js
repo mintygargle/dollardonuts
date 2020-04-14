@@ -1,6 +1,5 @@
-import React from "react";
+import { React, openPanel } from "../index";
 import styled from "styled-components";
-import openAcc from "../../openAcc";
 
 const CardContainer = styled.div`
   border: solid 2px #e5e5e5;
@@ -76,13 +75,6 @@ const PriceContainer = styled.div`
   }
 `;
 
-// const AccordionContainer = styled.div`
-//   margin-left: 16px;
-//   display: flex;
-//   flex-direction: column;
-//   align-item: flex-end;
-// `;
-
 const Accordion = styled.p`
   background-color: #ffffff00;
   color: black;
@@ -134,7 +126,7 @@ const MenuItemCard = props => {
             {props.price}
           </p>
         </PriceContainer>
-        <Accordion onClick={e => openAcc(e)}>See Ingredients</Accordion>
+        <Accordion onClick={e => openPanel(e)}>See Ingredients</Accordion>
         <Panel>
           <ul>
             {props.ingredients.map(ing => (
@@ -142,7 +134,7 @@ const MenuItemCard = props => {
             ))}
           </ul>
         </Panel>
-        <Accordion onClick={e => openAcc(e)}>See Allergens</Accordion>
+        <Accordion onClick={e => openPanel(e)}>See Allergens</Accordion>
         <Panel>
           <ul>
             {props.allergens.map(all => (

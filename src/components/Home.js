@@ -1,8 +1,4 @@
-import React from "react";
-import Hero from "./sections/hero";
-import MenuPreview from "./sections/menu-preview";
-import ShopInfo from "./sections/shop-info";
-import NowHiring from "./sections/now-hiring";
+import { React, Hero, MenuPreview, ShopInfo, NowHiring } from "./index";
 
 const Home = () => {
   return (

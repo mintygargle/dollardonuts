@@ -1,5 +1,4 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import { React, NavLink } from "../index";
 import styled from "styled-components";
 
 const FooterContainer = styled.footer`

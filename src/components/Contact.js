@@ -1,8 +1,5 @@
-import React from "react";
-import ContactForm from "./Forms/contact-form";
 import styled from "styled-components";
-import P from "./Text/Paragraph";
-import { NavLink } from "react-router-dom";
+import { React, NavLink, P, ContactForm } from "./index";
 
 const TextContainer = styled.div`
   max-width: 50%;

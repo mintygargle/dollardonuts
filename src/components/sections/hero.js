@@ -1,11 +1,7 @@
-import React from "react";
-import Button from "../Buttons/button";
 import bg from "../../img/hero_bg.jpg";
 import bg_wide from "../../img/hero_bg_wide.jpg";
 import styled from "styled-components";
-import Background from "../background";
-import { NavLink } from "react-router-dom";
-import P from "../Text/Paragraph";
+import { React, P, Button, Background, NavLink } from "../index";
 
 const HeroBG = styled(Background)`
   height: 430px;
@@ -55,10 +51,6 @@ const TextContainer = styled.div`
 
     justify-content: space-around;
   }
-`;
-
-const RedBG = styled.div`
-  background-color: red;
 `;
 
 const Hero = () => {

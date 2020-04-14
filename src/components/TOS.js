@@ -1,8 +1,4 @@
-import React from "react";
-import P from "./Text/Paragraph";
-import H1, { H2 } from "./Text/Heading";
-import { NavLink } from "react-router-dom";
-import HR from "./Text/horizontal-rule";
+import { React, P, H1, H2, HR, NavLink } from "./index";
 
 const TOS = () => {
   return (

@@ -1,8 +1,5 @@
-import React from "react";
-import Button from "../Buttons/button";
+import { React, Button, Background, NavLink } from "../index";
 import styled from "styled-components";
-import Background from "../background";
-import { NavLink } from "react-router-dom";
 
 const Container = styled(Background)`
   background-size: cover;

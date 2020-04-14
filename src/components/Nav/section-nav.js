@@ -1,36 +1,6 @@
 import React, { useState, useRef } from "react";
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
-import Burger from "../Burger/Burger";
-import Menu from "../B_Menu/Menu";
-import { useOnClickOutside } from "../../hook";
-import { AltStyledBurger } from "../Burger/Burger.alt_styled";
-
-const SectionNavContainer = styled.div`
-  align-items: flex-start;
-  border-radius: 0px 0px 16px 16px;
-  padding: 0.6em;
-  // position: fixed;
-  // top: 75px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  background-color: ${props => props.theme.primary_color};
-  width: 100%;
-`;
-
-const SectionNavBody = styled.div`
-  background-color: $color-primary;
-  border-radius: 16px 0px 0px 16px;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  width: fit-content;
-  padding: 0.3em 1em;
-  position: sticky;
-  float: right;
-  top: 100px;
-  z-index: 1;
-`;
+import { Burger, Menu, useOnClickOutside, AltStyledBurger } from "../index";
 
 const MainSectionLink = styled.a`
   font-size: 24px;

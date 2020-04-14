@@ -1,5 +1,4 @@
-import React from "react";
-import P from "./Text/Paragraph";
+import { React, P } from "./index";
 
 const About = () => {
   return (

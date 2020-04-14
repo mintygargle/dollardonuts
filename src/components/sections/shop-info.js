@@ -1,8 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 import bg from "../../img/shop_info_bg.jpg";
-import Background from "../background";
-import P from "../Text/Paragraph";
+import { React, P, Background } from "../index";
 
 const ShopBG = styled(Background)`
   height: 430px;

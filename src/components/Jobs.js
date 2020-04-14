@@ -1,9 +1,6 @@
-import React from "react";
-import JobCard from "./Cards/job";
 import Baker from "../img/baker.jpg";
 import Cashier from "../img/cashier.jpg";
-import styled from "styled-components";
-import P from "./Text/Paragraph";
+import { React, styled, P, JobCard } from "./index";
 
 const CardContainer = styled.div`
   display: flex;
@@ -16,6 +13,7 @@ const CardContainer = styled.div`
     justify-content: space-around;
   }
 `;
+
 const TextContainer = styled.div`
   align-items: center;
   background-color: whitesmoke;
@@ -27,10 +25,6 @@ const TextContainer = styled.div`
   // @media (max-width: 570px) {
   //   width: 80%;
   // }
-`;
-
-const BannerText = styled.p`
-  // background-color: black;
 `;
 
 const Jobs = () => {

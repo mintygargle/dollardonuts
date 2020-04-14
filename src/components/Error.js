@@ -1,9 +1,10 @@
-import React from "react";
+import { React, P } from "./index";
 
 const Error = () => {
   return (
     <div>
-      <p>Error: Page does not exist!</p>
+      <br />
+      <P color="gray">Error: Page does not exist!</P>
     </div>
   );
 };

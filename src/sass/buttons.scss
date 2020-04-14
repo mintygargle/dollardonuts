@@ -1,18 +1,18 @@
 // Button
 .btn {
-  font-size: 18px;
-  font-weight: medium;
   background-color: #2fa85f;
-  color: white;
-
-  box-shadow: none;
-  border-radius: 16px;
   border-color: #2fa85f;
+  border-radius: 16px;
   border-style: solid;
   border-width: 2px;
+
+  box-shadow: none;
+  color: white;
+  font-size: 18px;
+  font-weight: medium;
+  margin: 1em;
   max-width: fit-content;
   width: 100%;
-  margin: 1em;
 
   &:hover {
     background-color: rgba($color: #000000, $alpha: 0);
@@ -47,17 +47,17 @@
 
   // Large
   &--large {
-    max-width: 250px;
     font-size: 36px;
+    max-width: 250px;
     text-transform: uppercase;
   }
 
   // Corner
   &--lower-left-corner {
-    position: absolute;
+    border-radius: 0px 16px 0px 0px;
     bottom: 0;
     left: 0;
-    border-radius: 0px 16px 0px 0px;
+    position: absolute;
     transition: width 0.4s ease-in;
     width: 100%;
 

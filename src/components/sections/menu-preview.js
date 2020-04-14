@@ -1,10 +1,8 @@
-import React from "react";
-import MenuPreviewCard from "../Cards/menu-preview";
 import donuts from "../../img/donuts.jpg";
 import coffee from "../../img/coffee.jpg";
 import kolaches from "../../img/kolaches.png";
 import styled from "styled-components";
-import P from "../Text/Paragraph";
+import { React, P, MenuPreviewCard } from "../index";
 
 const CardContainer = styled.div`
   margin: 0 auto;

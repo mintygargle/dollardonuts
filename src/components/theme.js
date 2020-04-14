@@ -9,6 +9,7 @@ const theme = {
   dark_gray: "#888282",
   white: "#ffffff",
   accent: "#a6cdec",
+  warning: "#ed254e",
 
   //   Fonts
   primary_font: "Rubik",

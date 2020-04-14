@@ -1,8 +1,5 @@
-import React from "react";
-import Button from "../Buttons/button";
+import { React, Background, Button, NavLink } from "../index";
 import styled from "styled-components";
-import Background from "../../components/background";
-import { NavLink } from "react-router-dom";
 
 const CardContainer = styled.div`
   width: 320px;

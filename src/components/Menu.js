@@ -1,24 +1,19 @@
-import React from "react";
-import MenuItemCard from "./Cards/menu-item";
-import SectionNav from "./Nav/section-nav";
 import donut from "../img/donut_placeholder.png";
-import styled from "styled-components";
-import P from "./Text/Paragraph";
+import { React, P, MenuItemCard, SectionNav, styled } from "./index";
 
 const CardContainer = styled.div`
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   margin: 0 auto;
   width: fit-content;
-  // background-color: red;
 
   @media (min-width: ${props => props.theme.tablet}) {
-    flex-direction: row;
     align-items: baseline;
-    width: 95%;
+    flex-direction: row;
     margin-bottom: 2em;
+    width: 95%;
   }
 
   @media (min-width: ${props => props.theme.desktop}) {

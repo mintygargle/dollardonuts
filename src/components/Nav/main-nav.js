@@ -1,10 +1,7 @@
 import React, { useState, useRef } from "react";
-import { useOnClickOutside } from "../../hook";
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import Burger from "../Burger/Burger";
-import Menu from "../B_Menu/Menu";
 import LogoImg from "../../img/Logo.svg";
+import { Burger, Menu, NavLink, useOnClickOutside } from "../index";
 
 const MainNavContainer = styled.header`
   align-content: center;
@@ -120,12 +117,6 @@ const HamburgerContainer = styled.div`
   @media (max-width: ${props => props.theme.tablet}) {
     line-height: 0.8;
   }
-`;
-
-const HamburgerIcon = styled(Burger)`
-  position: absolute;
-  bottom: 0;
-  right: 0;
 `;
 
 const LinkMenu = styled.nav`

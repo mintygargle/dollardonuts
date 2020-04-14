@@ -1,9 +1,5 @@
-import React from "react";
 import openAcc from "../openAcc";
-import P from "./Text/Paragraph";
-import H1 from "./Text/Heading";
-import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import { React, P, H1, NavLink, styled } from "./index";
 
 const Panel = ({ className, children, title }) => {
   return (

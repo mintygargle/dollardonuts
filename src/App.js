@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { GlobalStyles } from "./global";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import Menu from "./components/Menu";
 import Jobs from "./components/Jobs";
@@ -21,27 +20,26 @@ class App extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        {/* <GlobalStyles /> */}
-        <BrowserRouter>
+        <Router>
           <MainNav></MainNav>
           <br></br>
           <br></br>
           <div>
             <Switch>
-              <Route path="/" component={Home} exact />
-              <Route path="/menu" component={Menu} exact />
-              <Route path="/Jobs" component={Jobs} exact />
-              <Route path="/apply" component={Apply} exact />
-              <Route path="/about" component={About} />
-              <Route path="/contact" component={Contact} />
-              <Route path="/privacy" component={Privacy} />
-              <Route path="/faq" component={FAQ} />
-              <Route path="/tos" component={TOS} />
+              <Route exact path="/" component={Home} />
+              <Route exact path="/menu" component={Menu} />
+              <Route exact path="/Jobs" component={Jobs} />
+              <Route exact path="/apply" component={Apply} />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/contact" component={Contact} />
+              <Route exact path="/privacy" component={Privacy} />
+              <Route exact path="/faq" component={FAQ} />
+              <Route exact path="/tos" component={TOS} />
               <Route component={Error} />
             </Switch>
           </div>
           <FooterNav></FooterNav>
-        </BrowserRouter>
+        </Router>
       </ThemeProvider>
     );
   }

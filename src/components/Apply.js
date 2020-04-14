@@ -1,6 +1,4 @@
-import React from "react";
-import JobForm from "./Forms/job-form";
-import P from "./Text/Paragraph";
+import { React, P, JobForm } from "./index";
 
 const Apply = () => {
   return (
